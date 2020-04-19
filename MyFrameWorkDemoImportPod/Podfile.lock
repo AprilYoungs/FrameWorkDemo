@@ -1,0 +1,25 @@
+PODS:
+  - SampleFramework (0.0.1):
+    - SDWebImage (~> 5.0)
+  - SDWebImage (5.7.0):
+    - SDWebImage/Core (= 5.7.0)
+  - SDWebImage/Core (5.7.0)
+
+DEPENDENCIES:
+  - SampleFramework (from `../SampleFrameworkForPod`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  SampleFramework:
+    :path: "../SampleFrameworkForPod"
+
+SPEC CHECKSUMS:
+  SampleFramework: 329e2a69a87c29badff7ba09ccccf60da1fdef34
+  SDWebImage: a99471f452bdfa0ca52ddf5b1adf2b61cab1d1eb
+
+PODFILE CHECKSUM: d3c11289c9c497edadbc0f62142b3c2f79ab5dd7
+
+COCOAPODS: 1.9.1

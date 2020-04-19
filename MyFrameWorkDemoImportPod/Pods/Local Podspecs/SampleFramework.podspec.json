@@ -1,0 +1,28 @@
+{
+  "name": "SampleFramework",
+  "version": "0.0.1",
+  "summary": "A short description of SampleFramework.",
+  "description": "A sample framework project",
+  "homepage": "https://aprilyoungs.github.io",
+  "license": "MIT",
+  "authors": {
+    "April": "yangchangjun010@hotmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "SampleFramework",
+  "resource_bundles": {
+    "MyFrameworkBundle": [
+      "SampleFramework/**/*.{strings,lproj,xib,storyboard,xcassets,json}"
+    ]
+  },
+  "dependencies": {
+    "SDWebImage": [
+      "~> 5.0"
+    ]
+  }
+}

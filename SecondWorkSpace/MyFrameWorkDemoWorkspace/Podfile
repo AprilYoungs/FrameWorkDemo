@@ -1,0 +1,23 @@
+platform :ios, '9.0'
+use_frameworks!
+# remove warning [!] [Xcodeproj] Generated duplicate UUIDs
+install!'cocoapods',:deterministic_uuids=>false
+
+# Add specific workspace if you have multi sub projects
+workspace 'MyFrameWorkDemo.xcworkspace'
+
+# reuse pods
+def pods
+  pod 'SDWebImage', '~> 5.0'
+end
+
+target 'SampleFramework' do
+  # find the project
+  project '../SampleFrameworkForPod/SampleFramework.xcodeproj'
+  pods
+end
+
+target 'MyFrameWorkDemo' do
+  pods
+  
+end
